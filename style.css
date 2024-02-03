@@ -1,0 +1,266 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,html{
+  height: 100%;
+  width: 100%;
+}
+
+.main{
+
+}
+
+.ls{
+  display: flex;
+  gap: 50px;
+  height: 30px;
+  align-items: center;
+  overflow: hidden;
+  animation-name: slideleft;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: black;
+  z-index: 2000;
+}
+
+.ls h1{
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Cinzel', serif;
+  background: black;
+  font-weight: 100;
+  padding: 0 20px;
+}
+
+.con h1{
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-size: 20vh;
+  padding: 15vh;
+}
+
+@keyframes slideleft{
+  from{
+    transform: translate(0%,0%)
+  }
+  to{
+    transform: translate(-20%, 0)
+  }
+}
+
+.rs {
+  display: flex;
+  gap: 50px;
+  height: 30px;
+  align-items: center;
+  overflow: hidden;
+  animation-name: slideright;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: black;
+  z-index: 2000;
+}
+
+.rs h1 {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Cinzel', serif;
+  background: black;
+  font-weight: 100;
+  padding: 0 20px;
+}
+
+@keyframes slideright{
+  from{
+    transform: translate(0%,0%)
+  }
+  to{
+    transform: translate(20%, 0)
+  }
+}
+
+.dsb{
+  font-weight: 600;
+  font-size: 5vh;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  gap: 25vh;
+}
+
+.con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cursor{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1;
+  background: papayawhip;
+  mix-blend-mode: multiply;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.page2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .ls, .rs {
+    gap: 20px; /* Reduce the gap between elements */
+  }
+  
+  .ls h1, .rs h1 {
+    font-size: 1rem; /* Decrease font size */
+  }
+  
+  .dsb {
+    font-size: 4vh; /* Decrease font size */
+    gap: 10vh; /* Reduce the gap between elements */
+  }
+}
+
+/* General Styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.page1, .page2 {
+  height: 100vh;
+  width: 100vw;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  /* Add your main styles here */
+}
+
+.ls, .rs {
+  display: flex;
+  gap: 50px;
+  height: 30px;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+  z-index: 2000;
+}
+
+.ls h1, .rs h1 {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Cinzel', serif;
+  background: black;
+  font-weight: 100;
+  padding: 0 20px;
+}
+
+.con h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: 800;
+  font-size: 20vh;
+  padding: 15vh;
+}
+
+@keyframes slideleft {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(-20%, 0);
+  }
+}
+
+@keyframes slideright {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(20%, 0);
+  }
+}
+
+.dsb {
+  font-weight: 600;
+  font-size: 5vh;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  gap: 25vh;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cursor {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1;
+  background: papayawhip;
+  mix-blend-mode: multiply;
+}
